@@ -1,37 +1,60 @@
 cff-version: 1.2.0
 message: "If you reuse this dataset or code, please cite both the manuscript and the repository."
 title: "Reproducibility data for: A topology-tuned pressure valve across the isoreticular RHO zeolite family"
+type: dataset
 authors:
-  - family-names: "Rodriguez-Garcia Balestra"
-    given-names: "Salvador R."
+  - family-names: "Balestra"
+    given-names: "Salvador Rodríguez Gómez"
     email: "srodriguez9@us.es"
-    orcid: "https://orcid.org/0000-0002-2360-6051"
-    affiliation: "Departamento de Fisica Atomica, Molecular y Nuclear, Universidad de Sevilla"
+    orcid: "https://orcid.org/0000-0002-2163-2782"
+    affiliation: "Departamento de Física Atómica, Molecular y Nuclear, Área de Física Teórica, Universidad de Sevilla, Sevilla ES-41012, Spain"
   - family-names: "Rivas-Blanco"
     given-names: "Antonio"
     orcid: "https://orcid.org/0009-0002-7544-2113"
+    affiliation: "Centro de Nanociencia y Tecnologías Sostenibles (CNATS), Departamento de Sistemas Físicos, Químicos y Naturales, Universidad Pablo de Olavide, Sevilla ES-41013, Spain"
+  - family-names: "Hamad"
+    given-names: "Said"
+    orcid: "https://orcid.org/0000-0003-4148-2344"
+    affiliation: "Centro de Nanociencia y Tecnologías Sostenibles (CNATS), Departamento de Sistemas Físicos, Químicos y Naturales, Universidad Pablo de Olavide, Sevilla ES-41013, Spain"
+  - family-names: "Ruíz-Salvador"
+    given-names: "A. Rabdel"
+    orcid: "https://orcid.org/0000-0002-2004-687X"
+    affiliation: "Centro de Nanociencia y Tecnologías Sostenibles (CNATS), Departamento de Sistemas Físicos, Químicos y Naturales, Universidad Pablo de Olavide, Sevilla ES-41013, Spain"
 version: "1.0.0"
 date-released: "2026-06-07"
 repository-code: "https://github.com/salrodgom/isoreticular"
-license:
-  - MIT
-  - CC-BY-4.0
+url: "https://github.com/salrodgom/isoreticular"
+license: CC-BY-4.0
 keywords:
   - zeolite
   - RHO topology
+  - isoreticular family
   - phase transition
   - Landau theory
+  - Cowley-Levanyuk
+  - molecular dynamics
   - PLUMED
   - LAMMPS
-  - molecular dynamics
+  - OPES
   - free energy
+  - pressure valve
+  - core-shell potential
+  - DFT
 preferred-citation:
   type: article
   title: "A topology-tuned pressure valve across the isoreticular RHO zeolite family"
   authors:
-    - family-names: "Rodriguez-Garcia Balestra"
-      given-names: "Salvador R."
+    - family-names: "Balestra"
+      given-names: "Salvador Rodríguez Gómez"
+      orcid: "https://orcid.org/0000-0002-2163-2782"
     - family-names: "Rivas-Blanco"
       given-names: "Antonio"
+      orcid: "https://orcid.org/0009-0002-7544-2113"
+    - family-names: "Hamad"
+      given-names: "Said"
+      orcid: "https://orcid.org/0000-0003-4148-2344"
+    - family-names: "Ruíz-Salvador"
+      given-names: "A. Rabdel"
+      orcid: "https://orcid.org/0000-0002-2004-687X"
   year: 2026
-  journal: "submitted (arXiv preprint)"
+  journal: "arXiv preprint"
