@@ -1,6 +1,6 @@
 # Isoreticular RHO zeolite family — reproducibility repository
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20583814.svg)](https://doi.org/10.5281/zenodo.20583814)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20583813.svg)](https://doi.org/10.5281/zenodo.20583813)
 [![License: MIT](https://img.shields.io/badge/License%20(code)-MIT-blue.svg)](LICENSE-CODE)
 [![License: CC BY 4.0](https://img.shields.io/badge/License%20(data)-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
 
@@ -14,7 +14,7 @@ logs, free-energy surfaces and figure-generation scripts used in the paper.
 Large raw trajectories and full COLVAR streams are deposited separately in
 Zenodo (see `docs/zenodo_link.md`).
 
-**Citable DOI of this snapshot:** [10.5281/zenodo.20583814](https://doi.org/10.5281/zenodo.20583814)
+**Citable DOI of this snapshot:** [10.5281/zenodo.20583813](https://doi.org/10.5281/zenodo.20583813)
 
 ---
 

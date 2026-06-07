@@ -22,14 +22,14 @@ authors:
     affiliation: "Centro de Nanociencia y Tecnologías Sostenibles (CNATS), Departamento de Sistemas Físicos, Químicos y Naturales, Universidad Pablo de Olavide, Sevilla ES-41013, Spain"
 version: "1.1.1"
 date-released: "2026-06-07"
-doi: "10.5281/zenodo.20583814"
+doi: "10.5281/zenodo.20583813"
 repository-code: "https://github.com/salrodgom/isoreticular"
 url: "https://github.com/salrodgom/isoreticular"
 license: CC-BY-4.0
 identifiers:
   - type: doi
-    value: "10.5281/zenodo.20583814"
-    description: "Zenodo deposit of this repository snapshot"
+    value: "10.5281/zenodo.20583813"
+    description: "Zenodo concept DOI (resolves to the latest version of this repository deposit)"
 keywords:
   - zeolite
   - RHO topology
