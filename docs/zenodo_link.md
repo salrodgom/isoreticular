@@ -5,8 +5,8 @@ full PLUMED COLVARS streams, DeltaFs.data history of the OPES expansion,
 GULP phonon dispersions) are not on GitHub. They are archived on Zenodo with
 a citable DOI.
 
-> **DOI:** _to be minted at v1.0-arxiv release_
-> URL: _https://doi.org/10.5281/zenodo.XXXXXXX_
+> **DOI:** [10.5281/zenodo.20583814](https://doi.org/10.5281/zenodo.20583814)
+> URL: https://doi.org/10.5281/zenodo.20583814
 
 ## What lives on Zenodo, not here
 

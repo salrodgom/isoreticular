@@ -1,14 +1,20 @@
 # Isoreticular RHO zeolite family — reproducibility repository
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20583814.svg)](https://doi.org/10.5281/zenodo.20583814)
+[![License: MIT](https://img.shields.io/badge/License%20(code)-MIT-blue.svg)](LICENSE-CODE)
+[![License: CC BY 4.0](https://img.shields.io/badge/License%20(data)-CC%20BY%204.0-lightgrey.svg)](LICENSE-DATA)
+
 Companion data and code for the manuscript:
 
 > **A topology-tuned pressure valve across the isoreticular RHO zeolite family**
-> S. R. G. Balestra, A. Rivas-Blanco *et al.* (2026)
+> S. R. G. Balestra, A. Rivas-Blanco, S. Hamad, A. R. Ruíz-Salvador (2026)
 
 This repository archives the inputs, force fields, optimisation logs, PLUMED
 logs, free-energy surfaces and figure-generation scripts used in the paper.
 Large raw trajectories and full COLVAR streams are deposited separately in
 Zenodo (see `docs/zenodo_link.md`).
+
+**Citable DOI of this snapshot:** [10.5281/zenodo.20583814](https://doi.org/10.5281/zenodo.20583814)
 
 ---
 
