@@ -1,0 +1,25 @@
+Creative Commons Attribution 4.0 International (CC-BY-4.0)
+==========================================================
+
+The data and documentation in this repository (CIF files, GULP outputs,
+PLUMED logs, free-energy surfaces, .dat files and accompanying README/text
+documents) are licensed under the Creative Commons Attribution 4.0
+International License.
+
+Summary (the licence is not a substitute for the full legal text):
+
+You are free to:
+
+  - Share: copy and redistribute the material in any medium or format.
+  - Adapt: remix, transform, and build upon the material for any purpose,
+    even commercially.
+
+Under the following terms:
+
+  - Attribution: you must give appropriate credit, provide a link to the
+    licence, and indicate if changes were made. You may do so in any
+    reasonable manner, but not in any way that suggests the licensor
+    endorses you or your use. Suggested citation: see CITATION.cff.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+Human-readable summary: https://creativecommons.org/licenses/by/4.0/

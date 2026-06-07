@@ -1,0 +1,67 @@
+# Use energy, volume and Delta as CVs 
+energy: ENERGY
+volume: VOLUME
+#TOM    648 H1   MOL     0       3.133  20.746  21.026  0.00  0.00           H  
+#TOM    652 H1   MOL     0       3.133  15.851  16.131  0.00  0.00           H  
+#TOM    584 H2   MOL     0       3.133  15.851  21.026  0.00  0.00           H  
+#TOM    588 H2   MOL     0       3.133  20.746  16.131  0.00  0.00           H  
+#TOM    596 S1   MOL     0      14.926   2.687  21.026  0.00  0.00           S  
+#TOM    608 S1   MOL     0      10.031   2.687  16.131  0.00  0.00           S  
+#TOM    628 S2   MOL     0      14.926   2.687  16.131  0.00  0.00           S  
+#TOM    640 S2   MOL     0      10.031   2.687  21.026  0.00  0.00           S  
+#TOM    664 C1   MOL     0      14.926  15.851   2.967  0.00  0.00           C  
+#TOM    668 C1   MOL     0      10.031  20.746   2.967  0.00  0.00           C  
+#TOM    612 C2   MOL     0      14.926  20.746   2.967  0.00  0.00           C  
+#TOM    624 C2   MOL     0      10.031  15.851   2.967  0.00  0.00           C  
+#TOM    580 N1   MOL     0      21.823  20.746  21.026  0.00  0.00           N  
+#TOM    592 N1   MOL     0      21.823  15.851  16.131  0.00  0.00           N  
+#TOM    644 N1   MOL     0      21.823  20.746  16.131  0.00  0.00           N  
+#TOM    656 N1   MOL     0      21.823  15.851  21.026  0.00  0.00           N  
+#TOM    581 F1   MOL     0      19.323   3.350   8.570  0.00  0.00           F  
+#TOM    585 F1   MOL     0      19.323   8.290   3.630  0.00  0.00           F  
+#TOM    645 F2   MOL     0      19.323   8.290   8.570  0.00  0.00           F  
+#TOM    649 F2   MOL     0      19.323   3.350   3.630  0.00  0.00           F  
+#TOM    614 Xe1  MOL     0       4.013   8.717  21.711  0.00  0.00          Xe  
+#TOM    618 Xe1  MOL     0       8.907   3.823  21.711  0.00  0.00          Xe  
+#TOM    658 Xe2  MOL     0       8.907   8.717  21.711  0.00  0.00          Xe  
+#TOM    670 Xe2  MOL     0       4.013   3.823  21.711  0.00  0.00          Xe
+# Delta:
+d1_1: DISTANCE ATOMS=648,652
+d1_2: DISTANCE ATOMS=584,588
+d1: MATHEVAL ARG=d1_1,d1_2 FUNC=0.5*sqrt((x-y)*(x-y)) PERIODIC=NO
+#
+d2_1: DISTANCE ATOMS=596,608
+d2_2: DISTANCE ATOMS=628,640
+d2: MATHEVAL ARG=d2_1,d2_2 FUNC=0.5*sqrt((x-y)*(x-y)) PERIODIC=NO
+#
+d3_1: DISTANCE ATOMS=664,668
+d3_2: DISTANCE ATOMS=612,624
+d3: MATHEVAL ARG=d3_1,d3_2 FUNC=0.5*sqrt((x-y)*(x-y)) PERIODIC=NO
+#
+d4_1: DISTANCE ATOMS=580,592
+d4_2: DISTANCE ATOMS=644,656
+d4: MATHEVAL ARG=d4_1,d4_2 FUNC=0.5*sqrt((x-y)*(x-y)) PERIODIC=NO
+#
+d5_1: DISTANCE ATOMS=581,585
+d5_2: DISTANCE ATOMS=645,649
+d5: MATHEVAL ARG=d5_1,d5_2 FUNC=0.5*sqrt((x-y)*(x-y)) PERIODIC=NO
+#
+d6_1: DISTANCE ATOMS=614,618
+d6_2: DISTANCE ATOMS=658,670
+d6: MATHEVAL ARG=d6_1,d6_2 FUNC=0.5*sqrt((x-y)*(x-y)) PERIODIC=NO
+#
+delta: MATHEVAL ARG=d1,d2,d3,d4,d5,d6 VAR=x1,x2,x3,x4,x5,x6 FUNC=10*(x1+x2+x3+x4+x5+x6)/6.0 PERIODIC=NO     # delta  in A
+cell: MATHEVAL ARG=volume FUNC=10.0*(x/8.0)^(1.0/3.0) PERIODIC=NO  # volume in A
+#
+opes: OPES_METAD_EXPLORE ...
+  ARG=delta,cell PACE=500 TEMP=298.15 BARRIER=0.2*240
+  WALKERS_MPI NLIST
+  STATE_WFILE=STATE STATE_WSTRIDE=100000 STORE_STATES
+...
+#
+bias: COMBINE ARG=*.bias PERIODIC=NO 
+#
+PRINT STRIDE=100 ARG=energy,volume,delta,cell,opes.*,bias FILE=COLVARS   
+FLUSH STRIDE=100
+
+ENDPLUMED

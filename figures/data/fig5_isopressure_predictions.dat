@@ -1,0 +1,9 @@
+# Predicted critical pressures for G_6, G_7, G_8 from the unanchored
+# exponential fit p_c(k-1) = pi exp(-alpha (k-1)) of fig5_isopressure.gp
+# with pi = 0.930 +/- 0.022 GPa and alpha = 0.494 +/- 0.023, fitted on the
+# soft-mode p_c values of G_1-G_5 (fig5_isopressure_data.dat).
+#
+# label  p_c[GPa]  N_T
+G6       0.079     4368
+G7       0.048     6720
+G8       0.029     9792

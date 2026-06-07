@@ -1,0 +1,7 @@
+# u_eff/alpha = 1/delta^2 for the isoreticular RHO family.
+# Columns: k-1  u_eff/alpha [A^-2]
+0.000000 0.204746
+1.000000 0.654580
+2.000000 0.972577
+3.000000 1.806567
+4.000000 4.644768

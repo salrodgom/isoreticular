@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you reuse this dataset or code, please cite both the manuscript and the repository."
+title: "Reproducibility data for: A topology-tuned pressure valve across the isoreticular RHO zeolite family"
+authors:
+  - family-names: "Rodriguez-Garcia Balestra"
+    given-names: "Salvador R."
+    email: "srodriguez9@us.es"
+    orcid: "https://orcid.org/0000-0002-2360-6051"
+    affiliation: "Departamento de Fisica Atomica, Molecular y Nuclear, Universidad de Sevilla"
+  - family-names: "Rivas-Blanco"
+    given-names: "Antonio"
+    orcid: "https://orcid.org/0009-0002-7544-2113"
+version: "1.0.0"
+date-released: "2026-06-07"
+repository-code: "https://github.com/salrodgom/isoreticular"
+license:
+  - MIT
+  - CC-BY-4.0
+keywords:
+  - zeolite
+  - RHO topology
+  - phase transition
+  - Landau theory
+  - PLUMED
+  - LAMMPS
+  - molecular dynamics
+  - free energy
+preferred-citation:
+  type: article
+  title: "A topology-tuned pressure valve across the isoreticular RHO zeolite family"
+  authors:
+    - family-names: "Rodriguez-Garcia Balestra"
+      given-names: "Salvador R."
+    - family-names: "Rivas-Blanco"
+      given-names: "Antonio"
+  year: 2026
+  journal: "submitted (arXiv preprint)"

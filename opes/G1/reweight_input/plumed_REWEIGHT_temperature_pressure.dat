@@ -1,0 +1,16 @@
+energy: READ FILE=FILECOLVAR VALUES=energy IGNORE_TIME
+volume: READ FILE=FILECOLVAR VALUES=volume IGNORE_TIME
+cell: READ FILE=FILECOLVAR VALUES=cell IGNORE_TIME
+delta: READ FILE=FILECOLVAR VALUES=delta IGNORE_TIME
+bias: READ FILE=FILECOLVAR VALUES=bias IGNORE_TIME
+ 
+# Shift energy and volume (to avoid numerical issues)
+rvol: COMBINE ARG=volume PARAMETERS=XXXXX PERIODIC=NO 
+rene: COMBINE ARG=energy PARAMETERS=YYYYY PERIODIC=NO 
+# Weights
+bias_weights: REWEIGHT_BIAS TEMP=298.15 ARG=bias
+temp_press_weights: REWEIGHT_TEMP_PRESS TEMP=298.15 REWEIGHT_TEMP=Temperature PRESSURE=0.06022140857*8000 REWEIGHT_PRESSURE=Pressure ENERGY=rene VOLUME=rvol
+# Ensemble average of the volume at 300 K and 300 MPa
+avg_delta: AVERAGE ARG=delta LOGWEIGHTS=bias_weights,temp_press_weights
+avg_cell:  AVERAGE ARG=cell  LOGWEIGHTS=bias_weights,temp_press_weights
+PRINT ARG=avg_cell,avg_delta,bias_weights FILE=FILECOLVAR_REWEIGHT STRIDE=1 

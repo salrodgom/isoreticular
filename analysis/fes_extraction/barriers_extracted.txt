@@ -1,0 +1,14 @@
+=== Smoothed (sigma=2 pixels) grid extraction of free-energy barriers ===
+
+G_1    fes_11400         384    1.14        -                                 no saddle resolved
+G_1    fes_11500         384   1.150    1.22 Δ_cub=0.217, Δ_sad=0.400, Δ_brk=1.950  barr_fwd=    0.6 kJ/mol  barr_bwd=    3.5  barr_low=    3.5  [per Si:  0.004 kBT, 0.0000 in 100kBT units]
+G_1    fes_11600         384   1.160    1.23 Δ_cub=0.217, Δ_sad=0.400, Δ_brk=2.017  barr_fwd=    0.5 kJ/mol  barr_bwd=    5.1  barr_low=    5.1  [per Si:  0.005 kBT, 0.0001 in 100kBT units]
+G_2    fes_11400         270   0.725    1.38 Δ_cub=0.283, Δ_sad=0.283, Δ_brk=0.367  barr_fwd=    0.0 kJ/mol  barr_bwd=    0.5  barr_low=    0.5  [per Si:  0.001 kBT, 0.0000 in 100kBT units]
+G_2    fes_11500         270       ?       ? Δ_cub=0.283, Δ_sad=0.283, Δ_brk=1.000  barr_fwd=    0.0 kJ/mol  barr_bwd=    0.8  barr_low=    0.8  [per Si:  0.001 kBT, 0.0000 in 100kBT units]
+G_2    fes_11600         270       ?       ? Δ_cub=0.283, Δ_sad=0.283, Δ_brk=1.800  barr_fwd=    0.0 kJ/mol  barr_bwd=   54.0  barr_low=   54.0  [per Si:  0.080 kBT, 0.0008 in 100kBT units]
+G_3    fes_11400         672   0.100    0.28 Δ_cub=0.280, Δ_sad=0.320, Δ_brk=0.320  barr_fwd=    0.1 kJ/mol  barr_bwd=    0.0  barr_low=    0.1  [per Si:  0.000 kBT, 0.0000 in 100kBT units]
+G_3    fes_11500         672   0.347    0.98 Δ_cub=0.080, Δ_sad=0.320, Δ_brk=0.320  barr_fwd=    1.0 kJ/mol  barr_bwd=    0.0  barr_low=    1.0  [per Si:  0.001 kBT, 0.0000 in 100kBT units]
+G_3    fes_11600         672   0.500    1.42 Δ_cub=0.280, Δ_sad=0.280, Δ_brk=1.600  barr_fwd=    0.0 kJ/mol  barr_bwd=   92.3  barr_low=   92.3  [per Si:  0.055 kBT, 0.0006 in 100kBT units]
+G_4    fes_11400        1440   0.050    0.25 Δ_cub=0.147, Δ_sad=0.307, Δ_brk=0.307  barr_fwd=    3.0 kJ/mol  barr_bwd=    0.0  barr_low=    3.0  [per Si:  0.001 kBT, 0.0000 in 100kBT units]
+G_4    fes_11500        1440   0.100    0.50 Δ_cub=0.147, Δ_sad=0.307, Δ_brk=0.307  barr_fwd=    3.1 kJ/mol  barr_bwd=    0.0  barr_low=    3.1  [per Si:  0.001 kBT, 0.0000 in 100kBT units]
+G_4    fes_11600        1440   0.150    0.75 Δ_cub=0.147, Δ_sad=0.307, Δ_brk=0.307  barr_fwd=    3.1 kJ/mol  barr_bwd=    0.0  barr_low=    3.1  [per Si:  0.001 kBT, 0.0000 in 100kBT units]

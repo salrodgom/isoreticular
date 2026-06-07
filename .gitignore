@@ -1,0 +1,40 @@
+# Heavy files staged for Zenodo, not for GitHub
+*.xtc
+*.trr
+*.dcd
+*.lammpstrj
+MDNPT.*
+last.*.restart
+last.*.data
+KERNELS
+COSA
+restart_RFO/
+DeltaFs.data
+all_Colvar.data
+
+# Per-walker COLVARS (each ~5 MB)
+COLVARS
+COLVARS.*
+COLVAR_REWEIGHTED.*
+
+# Build artefacts
+__pycache__/
+*.pyc
+*.pyo
+*.aux
+*.toc
+*.out
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+
+# OS clutter
+.DS_Store
+Thumbs.db
+
+# Editor backups
+*~
+*.swp
+*.bak
+.*.bak_*

@@ -1,0 +1,58 @@
+# 
+units      metal
+boundary   p p p
+atom_style full
+timer timeout ${max_time} every 100
+#
+bond_style     harmonic
+angle_style    harmonic
+pair_style     hybrid buck/coul/long/cs 12.0 lj/cut/coul/long 12.0
+read_data      global_minimum.data
+kspace_style   ewald 1e-8
+pair_modify    table 0
+special_bonds  lj 0.0 0.0  0.00000 coul 0.0 0.0  0.00000
+#
+# MODIFICAR:
+dielectric                   1.0
+variable dt                  equal 0.00025
+variable TK                  equal 298.15     # K
+variable Pbar                equal 8000.0     # bar
+variable RandomSeed          world 1234567 732432 5849534 7564396
+variable pid                 world 0 1 2 3
+variable tdamp               equal 10*${dt}
+variable pdamp               equal 100*${dt}
+variable NumberOfNVEMDCycles equal 5000000    # 1 ns
+variable ndump               equal 100
+variable Nwrite              equal 100
+timestep ${dt}
+thermo        100
+thermo_style  custom step time pe vol press temp
+thermo_modify norm no flush yes
+velocity all create ${TK} ${RandomSeed} dist gaussian
+variable MacroStep loop 1
+# ------------------------ Equilibration Run -------------------------------
+velocity all create ${TK} ${RandomSeed}
+fix 2 all npt temp ${TK} ${TK} ${tdamp} tri ${Pbar} ${Pbar} ${pdamp}
+thermo 0
+run 1000
+unfix 2
+dump TRAJ all xtc ${ndump} MDNPT.${pid}.xtc
+dump_modify TRAJ precision 10000 sfactor 0.1 first yes sort id
+# ----------------------- Production
+reset_timestep 0
+fix 1 all plumed plumedfile plumed.dat outfile plumed.log
+fix 2 all nph iso ${Pbar} ${Pbar} ${pdamp}
+fix 3 all temp/csvr ${TK} ${TK} ${tdamp} ${RandomSeed}
+fix 4 all momentum 10000 linear 1 1 1 angular
+#fix 2 all npt temp ${TK} ${TK} ${tdamp} tri ${Pbar} ${Pbar} ${pdamp} mtk yes
+thermo 100
+run ${NumberOfNVEMDCycles}
+unfix 4
+unfix 3
+unfix 2
+unfix 1
+undump TRAJ
+print "Simulation finished"
+#
+write_data last.${pid}.data
+write_restart last.${pid}.restart

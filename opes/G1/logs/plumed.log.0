@@ -1,0 +1,222 @@
+PLUMED: PLUMED is starting
+PLUMED: Version: 2.9.0-dev (git: 07a9a90) compiled on Sep  2 2022 at 02:09:56
+PLUMED: Please cite these papers when using PLUMED [1][2]
+PLUMED: For further information see the PLUMED web page at http://www.plumed.org
+PLUMED: Root: /home/salrodgom/apps/plumed/plumed2/lib/plumed
+PLUMED: For installed feature, see /home/salrodgom/apps/plumed/plumed2/lib/plumed/src/config/config.txt
+PLUMED: Molecular dynamics engine: LAMMPS
+PLUMED: Precision of reals: 8
+PLUMED: Running over 8 nodes
+PLUMED: Number of threads: 1
+PLUMED: Cache line size: 512
+PLUMED: Number of atoms: 1920
+PLUMED: GROMACS-like replica exchange is on
+PLUMED: File suffix: .0
+PLUMED: FILE: plumed.dat
+PLUMED: Action ENERGY
+PLUMED:   with label energy
+PLUMED:   Bibliography [3][4]
+PLUMED: Action VOLUME
+PLUMED:   with label volume
+PLUMED: Action DISTANCE
+PLUMED:   with label d1_1
+PLUMED:   between atoms 80 361
+PLUMED:   using periodic boundary conditions
+PLUMED: Action DISTANCE
+PLUMED:   with label d1_2
+PLUMED:   between atoms 639 931
+PLUMED:   using periodic boundary conditions
+PLUMED: Action MATHEVAL
+PLUMED:   with label d1
+PLUMED:   with arguments d1_1 d1_2
+PLUMED:   with function : 0.5*sqrt((x-y)*(x-y))
+PLUMED:   with variables : x y
+PLUMED:   function as parsed by lepton: 0.5*(abs((x)-(y)))
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*(((x)-(y))+((x)-(y))))
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*((-1*((x)-(y)))+(-1*((x)-(y)))))
+PLUMED: Action DISTANCE
+PLUMED:   with label d2_1
+PLUMED:   between atoms 199 914
+PLUMED:   using periodic boundary conditions
+PLUMED: Action DISTANCE
+PLUMED:   with label d2_2
+PLUMED:   between atoms 379 807
+PLUMED:   using periodic boundary conditions
+PLUMED: Action MATHEVAL
+PLUMED:   with label d2
+PLUMED:   with arguments d2_1 d2_2
+PLUMED:   with function : 0.5*sqrt((x-y)*(x-y))
+PLUMED:   with variables : x y
+PLUMED:   function as parsed by lepton: 0.5*(abs((x)-(y)))
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*(((x)-(y))+((x)-(y))))
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*((-1*((x)-(y)))+(-1*((x)-(y)))))
+PLUMED: Action DISTANCE
+PLUMED:   with label d3_1
+PLUMED:   between atoms 205 634
+PLUMED:   using periodic boundary conditions
+PLUMED: Action DISTANCE
+PLUMED:   with label d3_2
+PLUMED:   between atoms 377 525
+PLUMED:   using periodic boundary conditions
+PLUMED: Action MATHEVAL
+PLUMED:   with label d3
+PLUMED:   with arguments d3_1 d3_2
+PLUMED:   with function : 0.5*sqrt((x-y)*(x-y))
+PLUMED:   with variables : x y
+PLUMED:   function as parsed by lepton: 0.5*(abs((x)-(y)))
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*(((x)-(y))+((x)-(y))))
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*((-1*((x)-(y)))+(-1*((x)-(y)))))
+PLUMED: Action DISTANCE
+PLUMED:   with label d4_1
+PLUMED:   between atoms 51 485
+PLUMED:   using periodic boundary conditions
+PLUMED: Action DISTANCE
+PLUMED:   with label d4_2
+PLUMED:   between atoms 659 1104
+PLUMED:   using periodic boundary conditions
+PLUMED: Action MATHEVAL
+PLUMED:   with label d4
+PLUMED:   with arguments d4_1 d4_2
+PLUMED:   with function : 0.5*sqrt((x-y)*(x-y))
+PLUMED:   with variables : x y
+PLUMED:   function as parsed by lepton: 0.5*(abs((x)-(y)))
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*(((x)-(y))+((x)-(y))))
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*((-1*((x)-(y)))+(-1*((x)-(y)))))
+PLUMED: Action DISTANCE
+PLUMED:   with label d5_1
+PLUMED:   between atoms 349 490
+PLUMED:   using periodic boundary conditions
+PLUMED: Action DISTANCE
+PLUMED:   with label d5_2
+PLUMED:   between atoms 233 669
+PLUMED:   using periodic boundary conditions
+PLUMED: Action MATHEVAL
+PLUMED:   with label d5
+PLUMED:   with arguments d5_1 d5_2
+PLUMED:   with function : 0.5*sqrt((x-y)*(x-y))
+PLUMED:   with variables : x y
+PLUMED:   function as parsed by lepton: 0.5*(abs((x)-(y)))
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*(((x)-(y))+((x)-(y))))
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*((-1*((x)-(y)))+(-1*((x)-(y)))))
+PLUMED: Action DISTANCE
+PLUMED:   with label d6_1
+PLUMED:   between atoms 651 941
+PLUMED:   using periodic boundary conditions
+PLUMED: Action DISTANCE
+PLUMED:   with label d6_2
+PLUMED:   between atoms 60 359
+PLUMED:   using periodic boundary conditions
+PLUMED: Action MATHEVAL
+PLUMED:   with label d6
+PLUMED:   with arguments d6_1 d6_2
+PLUMED:   with function : 0.5*sqrt((x-y)*(x-y))
+PLUMED:   with variables : x y
+PLUMED:   function as parsed by lepton: 0.5*(abs((x)-(y)))
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*(((x)-(y))+((x)-(y))))
+PLUMED:     0.5*((0.5*(recip(abs((x)-(y)))))*((-1*((x)-(y)))+(-1*((x)-(y)))))
+PLUMED: Action MATHEVAL
+PLUMED:   with label delta
+PLUMED:   with arguments d1 d2 d3 d4 d5 d6
+PLUMED:   with function : 10*(x1+x2+x3+x4+x5+x6)/6.0
+PLUMED:   with variables : x1 x2 x3 x4 x5 x6
+PLUMED:   function as parsed by lepton: 1.66667*((((((x1)+(x2))+(x3))+(x4))+(x5))+(x6))
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     1.66667
+PLUMED:     1.66667
+PLUMED:     1.66667
+PLUMED:     1.66667
+PLUMED:     1.66667
+PLUMED:     1.66667
+PLUMED: Action MATHEVAL
+PLUMED:   with label cell
+PLUMED:   with arguments volume
+PLUMED:   with function : 10.0*(x/8.0)^(1.0/3.0)
+PLUMED:   with variables : x
+PLUMED:   function as parsed by lepton: 10*((0.125*(x))^0.333333)
+PLUMED:   derivatives as computed by lepton:
+PLUMED:     0.416667*((0.125*(x))^-0.666667)
+PLUMED: Action ECV_MULTITHERMAL_MULTIBARIC
+PLUMED:   with label mtp
+PLUMED:   with arguments energy volume
+PLUMED:   temperature = 298.15, beta = 0.403395
+PLUMED:   added component to this action:  mtp.energy 
+PLUMED:   added component to this action:  mtp.volume 
+PLUMED:   running at TEMP=298.15 and PRESSURE=481.771
+PLUMED:   targeting a temperature range from TEMP_MIN=250 to TEMP_MAX=350
+PLUMED:    and a pressure range from PRESSURE_MIN=0.0602214 to PRESSURE_MAX=1083.99
+PLUMED:  -- NO_GEOM_SPACING: inverse temperatures will be linearly spaced
+PLUMED: Action ECV_UMBRELLAS_LINE
+PLUMED:   with label umb
+PLUMED:   with arguments delta
+PLUMED:   temperature = 298.15, beta = 0.403395
+PLUMED:   added component to this action:  umb.delta 
+PLUMED:   total number of umbrellas = 31
+PLUMED:     with SIGMA = 0.1
+PLUMED:     and SPACING = 1
+PLUMED: Action OPES_EXPANDED
+PLUMED:   with label opes
+PLUMED:   with arguments mtp.energy mtp.volume umb.delta
+PLUMED:   added component to this action:  opes.bias 
+PLUMED:   updating the bias with PACE = 500
+PLUMED:   initial unbiased OBSERVATION_STEPS = 100 (in units of PACE)
+PLUMED:  -- WALKERS_MPI: if multiple replicas are present, they will share the same bias via MPI
+PLUMED:   using multiple walkers
+PLUMED:     number of walkers: 4
+PLUMED:     walker rank: 0
+PLUMED:   using multiple MPI processes per simulation: 8
+PLUMED:   Bibliography: [5]
+PLUMED: Action COMBINE
+PLUMED:   with label bias
+PLUMED:   with arguments opes.bias
+PLUMED:   with coefficients: 1.000000
+PLUMED:   with parameters: 0.000000
+PLUMED:   and powers: 1.000000
+PLUMED: Action PRINT
+PLUMED:   with label @26
+PLUMED:   with stride 10
+PLUMED:   with arguments energy volume delta cell mtp.energy mtp.volume umb.delta bias
+PLUMED:   on file COLVARS
+PLUMED:   with format  %f
+PLUMED: Action FLUSH
+PLUMED:   with label @27
+PLUMED:   with stride 10
+PLUMED: Action ENDPLUMED
+PLUMED:   with label @28
+PLUMED: END FILE: plumed.dat
+PLUMED: Timestep: 0.000250
+PLUMED: KbT has not been set by the MD engine
+PLUMED: It should be set by hand where needed
+PLUMED: Relevant bibliography:
+PLUMED:   [1] The PLUMED consortium, Nat. Methods 16, 670 (2019)
+PLUMED:   [2] Tribello, Bonomi, Branduardi, Camilloni, and Bussi, Comput. Phys. Commun. 185, 604 (2014)
+PLUMED:   [3] Bartels and Karplus, J. Phys. Chem. B 102, 865 (1998)
+PLUMED:   [4] Bonomi and Parrinello, J. Comp. Chem. 30, 1615 (2009)
+PLUMED:   [5] M. Invernizzi, P.M. Piaggi, and M. Parrinello, Phys. Rev. X 10, 041034 (2020)
+PLUMED: Please read and cite where appropriate!
+PLUMED: Finished setup
+PLUMED: 
+PLUMED: Action OPES_EXPANDED
+PLUMED:    estimated TEMP spacing = 0.0119041
+PLUMED:     (spacing is on beta, not on temperature)
+PLUMED:    estimated PRESSURE spacing = 32.1899
+PLUMED:     (spacing is in beta0 units)
+PLUMED:   *  12 temperatures for ECV_MULTITHERMAL_MULTIBARIC
+PLUMED:   *  14 pressures for ECV_MULTITHERMAL_MULTIBARIC
+PLUMED:   *  31 windows for ECV_UMBRELLAS_LINE
+PLUMED:  ->5208 DeltaFs in total
+PLUMED: Finished initialization
+PLUMED: 
+PLUMED:                                               Cycles        Total      Average      Minimum      Maximum
+PLUMED:                                                    1  4664.290430  4664.290430  4664.290430  4664.290430
+PLUMED: 1 Prepare dependencies                       5000001    17.904512     0.000004     0.000002     0.000216
+PLUMED: 2 Sharing data                               5000001    52.628331     0.000011     0.000005     0.004127
+PLUMED: 3 Waiting for data                           5000001    71.855249     0.000014     0.000008     0.040002
+PLUMED: 4 Calculating (forward loop)                 5000001   477.626685     0.000096     0.000030     0.059997
+PLUMED: 5 Applying (backward loop)                   5000001   136.156927     0.000027     0.000019     0.009844
+PLUMED: 6 Update                                     5000001  3855.742924     0.000771     0.000000    13.688520
