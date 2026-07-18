@@ -33,5 +33,5 @@ plot \
     DATA.'/figS_sextic_direct_G1_data.dat' u 1:2 w p pt 7 ps 1.0 lc rgb '#cb4335' title '{/Helvetica-Italic G}_1 ({/Symbol h}=5.3)', \
     DATA.'/figS_sextic_direct_G2_data.dat' u 1:2 w p pt 7 ps 1.0 lc rgb '#f1c40f' title '{/Helvetica-Italic G}_2 ({/Symbol h}=0.12)', \
     DATA.'/figS_sextic_direct_G3_data.dat' u 1:2 w p pt 7 ps 1.0 lc rgb '#27ae60' title '{/Helvetica-Italic G}_3 ({/Symbol h}=0.05)', \
-    DATA.'/figS_sextic_direct_G4_data.dat' u 1:2 w p pt 7 ps 1.0 lc rgb '#2874a6' title '{/Helvetica-Italic G}_4 ({/Symbol h}<0.01)', \
-    DATA.'/figS_sextic_direct_G5_data.dat' u 1:2 w p pt 7 ps 1.0 lc rgb '#7d3c98' title '{/Helvetica-Italic G}_5 ({/Symbol h}<0.01)'
+    DATA.'/figS_sextic_direct_G4_data.dat' u 1:2 w p pt 7 ps 1.0 lc rgb '#2874a6' title '{/Helvetica-Italic G}_4 ({/Symbol h}<0.02)', \
+    DATA.'/figS_sextic_direct_G5_data.dat' u 1:2 w p pt 7 ps 1.0 lc rgb '#7d3c98' title '{/Helvetica-Italic G}_5 ({/Symbol h}<0.02)'

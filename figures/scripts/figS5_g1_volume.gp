@@ -16,7 +16,7 @@ set output 'figS5_g1_volume.eps'
 set encoding iso_8859_1
 set locale "en_GB.UTF-8"
 
-set xlabel "Hydrostatic pressure {/Helvetica-Italic p} [GPa]"
+set xlabel "Hydrostatic pressure, {/Helvetica-Italic p} [GPa]"
 set ylabel "{/Helvetica-Italic V}/{/Helvetica-Italic V}_0 [-]"
 set xrange [0.0 : 2.05]
 set yrange [0.70 : 1.02]

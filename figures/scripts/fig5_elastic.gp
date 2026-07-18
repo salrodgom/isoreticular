@@ -20,10 +20,10 @@
 set term postscript eps color blacktext enhanced 'Helvetica,26'
 set encoding iso_8859_1
 set locale "en_GB.UTF-8"
-set xlabel 'Hydrostatic pressure, {/Helvetica-Italic p} / [GPa]'
+set xlabel 'Hydrostatic pressure, {/Helvetica-Italic p} [GPa]'
 set xrange [0:2]
 set yrange [-10:100]
-set ylabel 'Elastic constant, {/Helvetica-Italic C_{ij}} / [GPa]'
+set ylabel 'Elastic constant, {/Helvetica-Italic C_{ij}} [GPa]'
 set key top right
 unset grid
 

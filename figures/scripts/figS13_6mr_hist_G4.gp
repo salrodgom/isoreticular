@@ -1,5 +1,5 @@
 #!/usr/bin/gnuplot
-# Figure S13(G_4, 6MR) - histogram of per-6MR distortion Gamma at nine
+# Figure S13(G_4, 6MR) - histogram of per-6MR distortion Lambda at nine
 # common pressures (0, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0, 1.5, 2.0 GPa).
 # Gamma = (1/2)(max - min) over the three opposite-O diagonal pairs.
 
@@ -8,7 +8,7 @@ set output 'figS13_6mr_hist_G4.eps'
 set encoding iso_8859_1
 set locale "en_GB.UTF-8"
 
-set xlabel "Per-6MR distortion {/Symbol G} [{\305}]"
+set xlabel "Per-6MR distortion {/Symbol L} [{\305}]"
 set ylabel "Probability density [{\305}^{-1}]"
 set xrange [0.0 : 1.2]
 set yrange [0 : 8]

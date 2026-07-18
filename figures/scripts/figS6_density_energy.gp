@@ -49,7 +49,7 @@ set palette defined ( \
     0.75 '#5ec962', \
     1.0 '#fde725')
 set cbrange [0.0 : 2.0]
-set cblabel "Hydrostatic pressure {/Helvetica-Italic p} [GPa]"
+set cblabel "Hydrostatic pressure, {/Helvetica-Italic p} [GPa]"
 
 G1 = '../data/figS6_density_energy_G1.dat'
 G2 = '../data/figS6_density_energy_G2.dat'

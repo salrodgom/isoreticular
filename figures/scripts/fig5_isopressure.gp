@@ -36,10 +36,10 @@ fit gg(x) DATA u ($0):2 via pi_, alpha_
 # Delta h_quartz non-negative for the family.
 E_quartz = -128.703350991
 
-set xlabel  "{/Helvetica-Italic k} - 1 / [-]"
+set xlabel  "{/Helvetica-Italic k} - 1 [-]"
 set xrange  [-0.5 : 7.5]
 set xtics   0,1,7
-set ylabel  "{/Helvetica-Italic p_c} / [GPa]"
+set ylabel  "{/Helvetica-Italic p_c} [GPa]"
 set logscale y
 set yrange  [0.02 : 1.05]
 set ytics ("0.02" 0.02, "0.05" 0.05, "0.10" 0.1, "0.20" 0.2, "0.50" 0.5, "1.00" 1) nomirror

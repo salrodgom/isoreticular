@@ -94,6 +94,13 @@ set key top right reverse Left font ",22"
 # Horizontal reference at omega^2 = 0 (the Cowley-Levanyuk zero-crossing)
 set arrow 100 from -0.05,0 to 1.20,0 nohead lc rgb '#888888' dt 2 lw 0.6
 
+# Vertical dashed line at each fitted p_c (same convention as fig3a/fig3b)
+set arrow 101 from pc_1,-200 to pc_1,800 nohead lc rgb '#cb4335' dt 2 lw 0.8
+set arrow 102 from pc_2,-200 to pc_2,800 nohead lc rgb '#f1c40f' dt 2 lw 0.8
+set arrow 103 from pc_3,-200 to pc_3,800 nohead lc rgb '#27ae60' dt 2 lw 0.8
+set arrow 104 from pc_4,-200 to pc_4,800 nohead lc rgb '#2874a6' dt 2 lw 0.8
+set arrow 105 from pc_5,-200 to pc_5,800 nohead lc rgb '#7d3c98' dt 2 lw 0.8
+
 set samples 1001
 
 plot \

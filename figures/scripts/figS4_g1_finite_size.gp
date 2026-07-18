@@ -21,7 +21,7 @@ set output 'figS4_g1_finite_size.eps'
 set encoding iso_8859_1
 set locale "en_GB.UTF-8"
 
-set xlabel "Hydrostatic pressure {/Helvetica-Italic p} [GPa]"
+set xlabel "Hydrostatic pressure, {/Helvetica-Italic p} [GPa]"
 set ylabel "D8R distortion {/Symbol D} [{\305}]"
 set xrange [0.0 : 2.05]
 set yrange [-0.1 : 2.7]

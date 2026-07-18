@@ -30,9 +30,9 @@ set multiplot
 set origin 0,0
 set size 1,1
 set key bottom right font ",18" samplen 2 spacing 1.1 width -1
-set xlabel 'Hydrostatic pressure, {/Helvetica-Italic p} / [GPa]'
+set xlabel 'Hydrostatic pressure, {/Helvetica-Italic p} [GPa]'
 set xrange [0:2]
-set ylabel '{/Symbol k}_T / [GPa^{-1}]'
+set ylabel '{/Symbol k}_T [GPa^{-1}]'
 set yrange [-0.1:0.30]
 set xtics 0,0.5,2
 set ytics

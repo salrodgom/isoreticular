@@ -1,14 +1,14 @@
 #!/usr/bin/gnuplot
-# Figure S13(G_1, 4MR) - histogram of per-4MR distortion Lambda at nine
+# Figure S13(G_1, 4MR) - histogram of per-4MR distortion Gamma at nine
 # common pressures (0, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0, 1.5, 2.0 GPa).
-# Lambda = (1/2)|d_02 - d_13| (Parise-Prince style for the 4MR square).
+# Gamma = (1/2)|d_02 - d_13| (Parise-Prince style for the 4MR square).
 
 set term postscript eps color enhanced blacktext 'Helvetica,22'
 set output 'figS13_4mr_hist_G1.eps'
 set encoding iso_8859_1
 set locale "en_GB.UTF-8"
 
-set xlabel "Per-4MR distortion {/Symbol L} [{\305}]"
+set xlabel "Per-4MR distortion {/Symbol G} [{\305}]"
 set ylabel "Probability density [{\305}^{-1}]"
 set xrange [0.0 : 1.2]
 set yrange [0 : 6]
