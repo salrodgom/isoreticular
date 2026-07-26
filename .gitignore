@@ -38,3 +38,7 @@ Thumbs.db
 *.swp
 *.bak
 .*.bak_*
+
+# Build artefacts from the gnuplot figure pipeline
+figures/scripts/*.eps
+figures/scripts/fit.log
